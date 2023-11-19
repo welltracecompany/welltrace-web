@@ -10,6 +10,11 @@ export const env = createEnv({
     POSTGRES_PRISMA_URL: zod.string().url(),
     POSTGRES_USER: zod.string(),
     POSTGRES_PASSWORD: zod.string(),
+
+    NEXTAUTH_SECRET: zod.string(),
+
+    DISCORD_CLIENT_ID: zod.string(),
+    DISCORD_CLIENT_SECRET: zod.string(),
   },
   client: {},
 
@@ -21,5 +26,10 @@ export const env = createEnv({
     POSTGRES_PRISMA_URL: process.env.POSTGRES_PRISMA_URL,
     POSTGRES_USER: process.env.POSTGRES_USER,
     POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+
+    DISCORD_CLIENT_ID: process.env.DISCORD_CLIENT_ID,
+    DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET,
   },
 });
