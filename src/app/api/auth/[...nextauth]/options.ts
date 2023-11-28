@@ -12,4 +12,7 @@ export const nextAuthOptions: NextAuthOptions = {
       clientSecret: env.DISCORD_CLIENT_SECRET,
     }),
   ],
+  session: {
+    strategy: "jwt",
+  },
 };
